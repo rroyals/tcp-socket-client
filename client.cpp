@@ -41,8 +41,6 @@ int main() {
 
 	cout << "Message from the server :: " << string(buf, 0, recv_data) << endl;
 
-	system("pause");
-
-		
+	system("pause");	
 
 }
