@@ -31,9 +31,9 @@ int main() {
 	int recv_data = recv(sock, buf, 4096, NULL);
 	cout << "Message from the server :: " << string(buf, 0, recv_data)  << endl;
 
-	std::string s_reflect;
-	std::cout << "Reflect a String (no spaces) :: ";
-	std::cin >> s_reflect;
+	string s_reflect;
+	cout << "Reflect a String (no spaces) :: ";
+	cin >> s_reflect;
 
 	send(sock, s_reflect.c_str(), s_reflect.length(), NULL);
 
