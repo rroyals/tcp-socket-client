@@ -24,7 +24,7 @@ int main() {
 	address.sin_family = AF_INET;
 	address.sin_port = htons(SERVER_PORT);
 
-	cout << "CLIENT :: Connecting..." << endl;;
+	cout << "CLIENT :: Connecting..." << endl;
 
 	connect(sock, (SOCKADDR*)&address, sizeof(address));
 
